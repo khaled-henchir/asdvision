@@ -68,26 +68,40 @@
                     xhr.onreadystatechange = function() {
                         if (xhr.readyState === XMLHttpRequest.DONE) {
                             if (xhr.status === 200) {
+<<<<<<< HEAD
                                 // If the request is successful, display the result
+=======
+>>>>>>> master
                                 var result = JSON.parse(xhr.responseText);
                                 var resultContainer = document.getElementById('result-container');
                                 resultContainer.innerHTML = result.result;
 								resultContainer.classList.add('stylish-text');
+<<<<<<< HEAD
                                 // Display any additional message
                                 alert(result.message);
                             } else {
                                 // If the request fails, display an error message
+=======
+                                alert(result.message);
+                            } else {
+>>>>>>> master
                                 alert('Prediction failed. Please try again.');
                             }
                         }
                     };
                     xhr.send(formData);
                 } else {
+<<<<<<< HEAD
                     // If the selected file is not an image, display an error message
                     alert('Please select an image file.');
                 }
             } else {
                 // If no file is selected, display an error message
+=======
+                    alert('Please select an image file.');
+                }
+            } else {
+>>>>>>> master
                 alert('Please select an image file.');
             }
         }

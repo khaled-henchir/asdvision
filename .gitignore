@@ -1,7 +1,16 @@
 __pycache__/
-.idea
+*.pyc
+*.pyo
+*.pyd
+
+.idea/
+.vscode/
+
 static/
-instance/
 templates/
+
+instance/
 .env
 
+*.log
+tmp/

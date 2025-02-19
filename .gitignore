@@ -1,0 +1,7 @@
+__pycache__/
+.idea
+static/
+instance/
+templates/
+.env
+
